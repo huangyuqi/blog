@@ -2,6 +2,7 @@
 title: "helloworld"
 description: "IT、随笔"
 github_username: huangyuqi
+repository: "huangyuqi/blog"
 minimal_mistakes_skin: "contrast"
 search: false
 
@@ -23,8 +24,8 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name: "林格"
-  bio: "云原生 / Agent Infra"
+  name: "helloworld"
+  bio: "IT/随笔"
   location: "Shanghai"
   links:
     - label: "GitHub"
