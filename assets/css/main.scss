@@ -1,0 +1,72 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+// 引入主题默认样式
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+// ===== 字体调小 =====
+html {
+  font-size: 14px;  // 默认是16px，改小这个全局生效
+}
+
+// ===== 正文区域宽一点 =====
+.page {
+  width: 100%;
+  padding-right: 0;
+}
+
+// ===== 文章列表标题字体 =====
+.archive__item-title {
+  font-size: 1.1em;
+  margin-bottom: 4px;
+}
+
+// ===== 文章列表摘要字体 =====
+.archive__item-excerpt {
+  font-size: 0.85em;
+  color: #555;
+  margin-top: 4px;
+}
+
+// ===== 日期和阅读时间颜色淡一点 =====
+.page__meta {
+  font-size: 0.75em;
+  color: #888;
+}
+
+// ===== 侧边栏作者名字 =====
+.author__name {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+// ===== 侧边栏简介 =====
+.author__bio {
+  font-size: 0.85em;
+  color: #666;
+}
+
+// ===== 去掉文章列表之间的分割线，改成留白 =====
+.list__item {
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1.5em;
+}
+
+// ===== 链接颜色 =====
+a {
+  color: #333;
+  &:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+}
+
+// ===== masthead（顶部导航栏）字体小一点 =====
+.masthead__inner-wrap {
+  font-size: 0.9em;
+}
